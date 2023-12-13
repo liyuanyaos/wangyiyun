@@ -425,16 +425,16 @@ export default {
     console.log(data.data.data);
     this.adountmvdata = data.data.data;
 
-    axios.post("http://111.229.247.11:3000/mv/all?area=港台").then((data) => {
+    axios.post("https://111.229.247.11:3000/mv/all?area=港台").then((data) => {
       this.adountmvdata1 = data.data.data;
     });
-    axios.post("http://111.229.247.11:3000/mv/all?area=欧美").then((data) => {
+    axios.post("https://111.229.247.11:3000/mv/all?area=欧美").then((data) => {
       this.adountmvdata2 = data.data.data;
     });
-    axios.post("http://111.229.247.11:3000/mv/all?area=韩国").then((data) => {
+    axios.post("https://111.229.247.11:3000/mv/all?area=韩国").then((data) => {
       this.adountmvdata3 = data.data.data;
     });
-    axios.post("http://111.229.247.11:3000/mv/all?area=日本").then((data) => {
+    axios.post("https://111.229.247.11:3000/mv/all?area=日本").then((data) => {
       this.adountmvdata4 = data.data.data;
     });
   },

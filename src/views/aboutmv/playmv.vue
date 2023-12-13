@@ -340,7 +340,7 @@ export default {
     console.log(this.$route.query.id);
     let res = await axios({
       method: "post",
-      url: `http://111.229.247.11:3000/mv/url?timestamp=${Date.now()}`,
+      url: `https://111.229.247.11:3000/mv/url?timestamp=${Date.now()}`,
       data: {
         id: this.$route.query.id,
         cookie: this.$store.state.auth.data.cookie,
@@ -355,7 +355,7 @@ export default {
     //   });
     axios({
       method: "post",
-      url: "http://111.229.247.11:3000/mv/detail/info",
+      url: "https://111.229.247.11:3000/mv/detail/info",
       data: {
         mvid: this.$route.query.id,
         cookie: this.$store.state.auth.data.cookie,
