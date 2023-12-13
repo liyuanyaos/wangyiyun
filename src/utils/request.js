@@ -7,7 +7,7 @@ import stroe from '@/store/index'
 // eslint-disable-next-line no-unused-vars
 const request = axios.create({
     // baseURL: 'http://localhost:3000',
-    baseURL: 'http://111.229.247.11:3000',
+    baseURL: 'https://111.229.247.11:3000',
 });
 
 // eslint-disable-next-line no-undef
