@@ -1844,7 +1844,7 @@ request.interceptors.request.use((config) => {
   // console.log("我的名字拦截后的请求");
   //config是你每一次发送请求的详细配置(请求的地址、请求的路径、请求的参数)
   //在这个位置可以对请求做出修改
-  const cookie = stroe.state.auth.data.cookie || false;
+  const cookie = stroe.state.auth || false;
   // console.log(cookie);
   if (cookie) {
     if (config.method === "post") {

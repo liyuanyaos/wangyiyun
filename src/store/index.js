@@ -13,7 +13,7 @@ const store = new Vuex.Store({
   state: {
     a: 123,
     blocks: [],
-    auth: {},
+    auth: null,
     isDarkModule: false,
     playaudiourl: "//media.vued.vanthink.cn/sparkle_your_name_am720p.mp4",
     tracks: [],
