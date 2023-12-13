@@ -3,7 +3,7 @@ import Home from "@/views/home";
 const routes = [
   {
     path: "/",
-    redirect: "/abountmv",
+    redirect: "/home",
   },
   {
     path: "/home",
