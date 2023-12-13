@@ -16,7 +16,7 @@ module.exports = defineConfig({
         project: "javascript-vue",
         // Auth tokens can be obtained from https://sentry.io/orgredirect/organizations/:orgslug/settings/auth-tokens/
         authToken:
-          "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",
+          "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",
       }),
     ],
   },

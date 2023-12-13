@@ -76,6 +76,20 @@ Vue.config.productionTip = false;
 //   }
 // };
 // Vue.$use()
+import * as Sentry from "@sentry/vue";
+Sentry.init({
+  Vue,
+  dsn: "https://85d2b280926aade9966ab5d0c893d27f@o4506386934595584.ingest.sentry.io/4506387538575360",
+  integrations: [
+    new Sentry.BrowserTracing({
+      routingInstrumentation: Sentry.vueRouterInstrumentation(router),
+      tracePropagationTargets: [],
+    }),
+  ],
+  tracesSampleRate: 1.0,
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
+});
 new Vue({
   router,
   store,
